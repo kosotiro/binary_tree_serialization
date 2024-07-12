@@ -112,8 +112,7 @@ void truncate_serialize_buffer(ser_buff_t **b){
 }
 
 
-void print_buffer_details(ser_buff_t *b, const char *fn, int lineno){
-
+void print_buffer_details(ser_buff_t *b, const char *fn, int lineno){    
     printf("%s():%d : starting address = 0x%x\n", fn, lineno, (unsigned int)b);
     printf("size = %d\n", b->size);
     printf("next = %d\n", b->next);
